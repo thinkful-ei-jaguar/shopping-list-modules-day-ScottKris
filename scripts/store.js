@@ -1,6 +1,7 @@
 
 import item from './item.js';
 import shoppingList from './shopping-list.js';
+
 let items = []; 
 let hideCheckedItems = false;
 
@@ -25,7 +26,7 @@ function addItem(name){
 function findAndToggleChecked(id) {
   const toToggle= this.findById(id);
   toToggle.checked = !toToggle.checked;
-};
+}
 
 function findAndUpdateName(id, newName) {
   try {
